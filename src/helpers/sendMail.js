@@ -29,6 +29,7 @@ const sendWelcomeEmail = async (email, data) => {
   template = await getTemplate("../views/welcome/welcome-email.ejs", {
     ...data,
     token,
+    url: process.env.FRONT_URL,
   });
 
   const attachments = await getImages("/views/welcome/images");
