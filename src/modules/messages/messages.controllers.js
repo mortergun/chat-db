@@ -1,0 +1,36 @@
+const { Message } = require("../../models");
+
+const createConversationMessage = async (req, res, next) => {
+  try {
+    const { id: conversationId } = req.params;
+    const { senderId, content } = req.body;
+
+    await Message.create({
+      conversationId,
+      senderId,
+      content,
+    });
+
+    res.status(201).end();
+  } catch (error) {
+    next(error);
+  }
+};
+
+const getConversationMessages = async (req, res, next) => {
+  try {
+    const { id: conversationId } = req.params;
+    const messages = await Message.findAll({
+      where: { conversationId },
+    });
+
+    res.json(messages);
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = {
+  createConversationMessage,
+  getConversationMessages,
+};

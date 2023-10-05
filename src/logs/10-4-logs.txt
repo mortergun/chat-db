@@ -1,0 +1,4 @@
+=====================ERROR 20:10======================
+req: POST /api/v1/users/login body: {"email":"pinguinos@outlook.com","password":"Academlo123@"} 
+res: status: 400, {"error":"User does not exist","message":"You need register before login"} 
+

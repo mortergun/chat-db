@@ -1,0 +1,36 @@
+=====================ERROR 16:24======================
+req: POST /api/v1/messages/conversation/2 body: {"content":"shalalalaa","senderId":1} 
+res: status: 401, {"message":"No authorization token"} 
+
+=====================ERROR 20:50======================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+=====================ERROR 20:57======================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+=====================ERROR 20:57======================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+=====================ERROR 20:58======================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+=====================ERROR 20:58======================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+=====================ERROR 21:42======================
+req: PUT /api/v1/users/1 body: {} 
+res: status: 401, {"message":"No authorization token"} 
+
+=====================ERROR 21:42======================
+req: PUT /api/v1/users/1 body: {} 
+res: status: 401, {"message":"No authorization token"} 
+
+=====================ERROR 21:42======================
+req: PUT /api/v1/users/1 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T23:26:07.000Z"} 
+

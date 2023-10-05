@@ -1,0 +1,5 @@
+JWT_SECRET= Aqui se coloca la palabra secreta
+JWT_EMAIL_SECRET= Aqui se coloca la palabra secreta de email
+G_USER= Aqui se coloca el usuario de google
+G_PASSWORD= Aqui se coloca la contraseña de usuario de google
+APP_URL= Aqui va la url de la app

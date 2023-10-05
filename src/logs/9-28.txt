@@ -1,0 +1,51 @@
+=====================ERROR 17:37======================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+=====================ERROR 17:37======================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+=====================ERROR 17:40======================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+=====================ERROR 17:41======================
+=====================ERROR 19:15======================
+{}
+
+=====================ERROR 19:16======================
+{}
+
+=====================ERROR 19:19======================
+{}
+
+=====================ERROR 20:19======================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+=====================ERROR 20:19======================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+=====================ERROR 20:21======================
+{"status":400,"message":"Token is required"}
+
+{"status":400,"error":"Invalid data","message":["No se incluye la propiedad firstname","El firstname no debe estar vacio","El valor del firstname debe ser string","La longitud del nombre de ser entre 2 y 50 caracteres","El firstname solo acepta letras","No se incluye la propiedad lastname","El lastname no debe estar vacio","El valor del lastname debe ser string","La longitud del apellido de ser entre 2 y 50 caracteres","El lastname solo acepta letras"]}
+
+=====================ERROR 20:21======================
+=====================ERROR 20:23======================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
+{}
+
+=====================ERROR 20:43======================
+{}
+
+=====================ERROR 20:44======================
+{}
+
+=====================ERROR 20:45======================
+=====================ERROR 20:46======================
+{}
+
+{}
+
+=====================ERROR 20:47======================

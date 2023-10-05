@@ -1,0 +1,9 @@
+=====================ERROR 28/9/2023, 16:49:33======================
+{"status":400,"error":"Incorrect password","message":"The password does not match with the user"}
+
+=====================ERROR 28/9/2023, 16:49:41======================
+{"expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"email\": \"J-NoCopyright@outlook.com\",\r\n}","type":"entity.parse.failed"}
+
+=====================ERROR 28/9/2023, 16:49:50======================
+{"status":400,"error":"User does not exist","message":"You need register before login"}
+
