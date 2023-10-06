@@ -5,8 +5,14 @@
     "description": "A little whatsapp api clone...",
     "version": "1.0"
   },
+  "servers": [
+    {
+      "url": "https://chat-db-r8u8-dev.fl0.io/api/v1",
+      "variables": {}
+    }
+  ],
   "paths": {
-    "/api/v1/users": {
+    "/users": {
       "post": {
         "tags": [
           "users"
@@ -27,7 +33,7 @@
                     "example": {
                       "firstname": "Jose",
                       "lastname": "Zarate",
-                      "email": "J-NoCopyright@outlook.com",
+                      "email": "jose@example.com",
                       "password": "Academlo123@"
                     }
                   }
@@ -36,7 +42,7 @@
               "example": {
                 "firstname": "Jose",
                 "lastname": "Zarate",
-                "email": "J-NoCopyright@outlook.com",
+                "email": "jose@example.com",
                 "password": "Academlo123@"
               }
             }
@@ -64,10 +70,15 @@
             "headers": {}
           }
         },
-        "deprecated": false
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
       }
     },
-    "/api/v1/users/login": {
+    "/users/login": {
       "post": {
         "tags": [
           "users"
@@ -86,14 +97,14 @@
                   },
                   {
                     "example": {
-                      "email": "J-NoCopyright@outlook.com",
+                      "email": "jose@example.com",
                       "password": "Academlo123@"
                     }
                   }
                 ]
               },
               "example": {
-                "email": "J-NoCopyright@outlook.com",
+                "email": "jose@example.com",
                 "password": "Academlo123@"
               }
             }
@@ -106,15 +117,10 @@
             "headers": {}
           }
         },
-        "deprecated": false,
-        "security": [
-          {
-            "bearer": []
-          }
-        ]
+        "deprecated": false
       }
     },
-    "/api/v1/conversations": {
+    "/conversations": {
       "post": {
         "tags": [
           "conversations"
@@ -153,10 +159,15 @@
             "headers": {}
           }
         },
-        "deprecated": false
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
       }
     },
-    "/api/v1/conversations/group": {
+    "/conversations/group": {
       "post": {
         "tags": [
           "conversations"
@@ -181,7 +192,7 @@
                         4,
                         5
                       ],
-                      "title": "parangaricutirimicuaro"
+                      "title": "Fiesta del sabado"
                     }
                   }
                 ]
@@ -193,7 +204,7 @@
                   4,
                   5
                 ],
-                "title": "parangaricutirimicuaro"
+                "title": "Fiesta del sabado"
               }
             }
           },
@@ -205,10 +216,15 @@
             "headers": {}
           }
         },
-        "deprecated": false
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
       }
     },
-    "/api/v1/conversations/{id}": {
+    "/conversations/{id}": {
       "get": {
         "tags": [
           "conversations"
@@ -235,10 +251,15 @@
             "headers": {}
           }
         },
-        "deprecated": false
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
       }
     },
-    "/api/v1/messages/conversation/{id}": {
+    "/messages/conversation/{id}": {
       "post": {
         "tags": [
           "messages"
@@ -255,7 +276,7 @@
             "schema": {
               "type": "integer",
               "format": "int32",
-              "example": 4
+              "example": 2
             }
           }
         ],
@@ -270,14 +291,14 @@
                   },
                   {
                     "example": {
-                      "content": "queti",
+                      "content": "Hola mundo",
                       "senderId": 1
                     }
                   }
                 ]
               },
               "example": {
-                "content": "queti",
+                "content": "Hola mundo",
                 "senderId": 1
               }
             }
@@ -313,7 +334,7 @@
             "schema": {
               "type": "integer",
               "format": "int32",
-              "example": 4
+              "example": 2
             }
           }
         ],
@@ -331,7 +352,7 @@
         ]
       }
     },
-    "/api/v1/users/{id}": {
+    "/users/{id}": {
       "put": {
         "tags": [
           "Misc"
@@ -415,7 +436,7 @@
         "example": {
           "firstname": "Jose",
           "lastname": "Zarate",
-          "email": "J-NoCopyright@outlook.com",
+          "email": "jose@example.com",
           "password": "Academlo123@"
         }
       },
@@ -435,7 +456,7 @@
           }
         },
         "example": {
-          "email": "J-NoCopyright@outlook.com",
+          "email": "jose@example.com",
           "password": "Academlo123@"
         }
       },
@@ -493,7 +514,7 @@
             4,
             5
           ],
-          "title": "parangaricutirimicuaro"
+          "title": "Fiesta del sabado"
         }
       },
       "createnewmessagesrequest": {
@@ -513,7 +534,7 @@
           }
         },
         "example": {
-          "content": "queti",
+          "content": "Hola mundo",
           "senderId": 1
         }
       }
